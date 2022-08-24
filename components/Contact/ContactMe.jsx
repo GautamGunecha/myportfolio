@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ContactMe = () => {
   return (
-    <div className="w-full text-white bg-neutral-900 h-screen">
+    <div id="contactme" className="w-full text-white bg-neutral-900 h-screen">
       <div className="max-w-[1240px] flex flex-col mx-auto justify-center  w-full px-2 py-16 h-full">
         <h1 className="text-xl text-orange-400">Contact Me</h1>
         <p className="mt-2 text-sm text-slate-200 text-justify tracking-widest">
@@ -43,8 +43,7 @@ const ContactMe = () => {
             </button>
           </form>
         </div>
-
-        <div className="flex justify-end py-12">
+        <div className="flex justify-end mt-8">
           <Link href="/">
             <div className="cursor-pointer shadow-sm shadow-orange-500 rounded-full hover:scale-110 p-2 ease-in duration-300">
               <FaAngleDoubleUp size={25} className="text-red-600" />

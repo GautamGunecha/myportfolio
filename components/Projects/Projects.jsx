@@ -22,7 +22,7 @@ const Projects = () => {
   }, [item]);
 
   return (
-    <div className="w-full text-white bg-black/95">
+    <div id="projects" className="w-full text-white bg-black/95">
       <div className="max-w-[1240px] mx-auto w-full px-2 py-16">
         <h1 className="text-xl text-orange-400">Portfolio</h1>
         {/* Projects filters */}

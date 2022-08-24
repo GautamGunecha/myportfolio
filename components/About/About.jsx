@@ -2,7 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="w-full text-white bg-black/80 p-2 flex items-center md:h-screen py-16">
+    <div
+      id="about"
+      className="w-full text-white bg-black/80 p-2 flex items-center md:h-screen py-16"
+    >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <h1 className="tracking-widest text-xl font-primary text-orange-500">

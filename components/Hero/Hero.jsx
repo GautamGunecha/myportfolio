@@ -1,8 +1,6 @@
-import { AiOutlineArrowDown } from "react-icons/ai";
-
 const Hero = () => {
   return (
-    <div className="w-full h-screen  text-center bg-neutral-900">
+    <div id="hero" className="w-full h-screen  text-center bg-neutral-900">
       <div className="max-w-[1240px] text-white h-full m-auto flex items-center justify-center">
         <div>
           <p className=" uppercase tracking-widest font-extralight  text-sm">

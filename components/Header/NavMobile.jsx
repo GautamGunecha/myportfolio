@@ -1,4 +1,6 @@
 import { Fragment, useState } from "react";
+import Link from "next/link";
+
 import {
   AiOutlineMenu,
   AiOutlineClose,
@@ -38,9 +40,13 @@ const NavMobile = () => {
             </h1>
             <section
               className="rounded-full
-             p-2 shadow-lg shadow-orange-400"
+             p-2 shadow-sm shadow-orange-500"
             >
-              <AiOutlineClose size={22} onClick={handleNavigation} />
+              <AiOutlineClose
+                size={20}
+                className="text-red-500"
+                onClick={handleNavigation}
+              />
             </section>
           </div>
 
@@ -54,21 +60,50 @@ const NavMobile = () => {
           {/* navigation */}
           <div className="mt-8 w-full">
             <ul className="w-full flex-col">
-              <li className="mb-4 text-lg cursor-pointer hover:text-orange-400 transition duration-500 ease-out hover:ease-in">
-                Home
-              </li>
-              <li className="mb-4 text-lg cursor-pointer hover:text-orange-400 transition duration-500 ease-out hover:ease-in">
-                About
-              </li>
-              <li className="mb-4 text-lg cursor-pointer hover:text-orange-400 transition duration-500 ease-out hover:ease-in">
-                Portfolio
-              </li>
-              <li className="mb-4 text-lg cursor-pointer hover:text-orange-400 transition duration-500 ease-out hover:ease-in">
-                Contact
-              </li>
-              <li className="mb-4 text-lg cursor-pointer hover:text-orange-400 transition duration-500 ease-out hover:ease-in">
-                Blog
-              </li>
+              <Link href="/">
+                <li
+                  onClick={handleNavigation}
+                  className="mb-4 text-lg cursor-pointer hover:text-orange-400 transition duration-500 ease-out hover:ease-in"
+                >
+                  Home
+                </li>
+              </Link>
+
+              <Link href="/#about">
+                <li
+                  onClick={handleNavigation}
+                  className="mb-4 text-lg cursor-pointer hover:text-orange-400 transition duration-500 ease-out hover:ease-in"
+                >
+                  About
+                </li>
+              </Link>
+
+              <Link href="/#projects">
+                <li
+                  onClick={handleNavigation}
+                  className="mb-4 text-lg cursor-pointer hover:text-orange-400 transition duration-500 ease-out hover:ease-in"
+                >
+                  Portfolio
+                </li>
+              </Link>
+
+              <Link href="/#contactme">
+                <li
+                  onClick={handleNavigation}
+                  className="mb-4 text-lg cursor-pointer hover:text-orange-400 transition duration-500 ease-out hover:ease-in"
+                >
+                  Contact
+                </li>
+              </Link>
+
+              <Link href="/#skills">
+                <li
+                  onClick={handleNavigation}
+                  className="mb-4 text-lg cursor-pointer hover:text-orange-400 transition duration-500 ease-out hover:ease-in"
+                >
+                  Skills
+                </li>
+              </Link>
             </ul>
           </div>
 
@@ -76,21 +111,21 @@ const NavMobile = () => {
           <div className="pt-28">
             <h1 className="text-xl">Let's connect!</h1>
             <div className="flex mt-8 w-full text-center gap-8">
-              <section className="rounded-full shadow-lg p-2 shadow-blue-300 cursor-pointer">
+              <section className="rounded-full shadow-sm p-2 shadow-blue-300 cursor-pointer">
                 <AiOutlineGithub
                   size={25}
-                  className="hover:text-gray-300 transition duration-500 ease-out hover:ease-in"
+                  className="text-gray-300 transition duration-500 ease-out hover:ease-in"
                 />
               </section>
-              <section className="cursor-pointer  rounded-full shadow-lg p-2 shadow-blue-300">
+              <section className="cursor-pointer  rounded-full shadow-sm p-2 shadow-blue-300">
                 <AiOutlineLinkedin
                   size={25}
-                  className="hover:text-sky-600 transition duration-500 ease-out hover:ease-in"
+                  className="text-sky-600 transition duration-500 ease-out hover:ease-in"
                 />
               </section>
-              <section className="rounded-full cursor-pointer shadow-lg p-2 shadow-blue-300 ">
+              <section className="rounded-full cursor-pointer shadow-sm p-2 shadow-blue-300 ">
                 <AiOutlineTwitter
-                  className="hover:text-sky-400 transition duration-500 ease-out hover:ease-in"
+                  className="text-sky-400 transition duration-500 ease-out hover:ease-in"
                   size={25}
                 />
               </section>
