@@ -9,9 +9,11 @@ const ContactMe = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     const data = {
       name,
       email,
@@ -34,6 +36,8 @@ const ContactMe = () => {
           setSubject("");
         }
       });
+
+    setLoading(false);
   };
   return (
     <div id="contactme" className="w-full text-white bg-neutral-900 h-screen">
@@ -86,7 +90,7 @@ const ContactMe = () => {
                 type="submit"
                 className="bg-orange-400 hover:bg-red-500 ease-in duration-300 p-2"
               >
-                Send Mail
+                {!loading ? "Send Mail" : "Sending mail..."}
               </button>
             ) : (
               <p className="text-lg text-center justify-center text-green-600">
