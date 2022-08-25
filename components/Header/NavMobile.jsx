@@ -111,24 +111,32 @@ const NavMobile = () => {
           <div className="pt-28">
             <h1 className="text-xl">Let's connect!</h1>
             <div className="flex mt-8 w-full text-center gap-8">
-              <section className="rounded-full shadow-sm p-2 shadow-blue-300 cursor-pointer">
-                <AiOutlineGithub
-                  size={25}
-                  className="text-gray-300 transition duration-500 ease-out hover:ease-in"
-                />
-              </section>
-              <section className="cursor-pointer  rounded-full shadow-sm p-2 shadow-blue-300">
-                <AiOutlineLinkedin
-                  size={25}
-                  className="text-sky-600 transition duration-500 ease-out hover:ease-in"
-                />
-              </section>
-              <section className="rounded-full cursor-pointer shadow-sm p-2 shadow-blue-300 ">
-                <AiOutlineTwitter
-                  className="text-sky-400 transition duration-500 ease-out hover:ease-in"
-                  size={25}
-                />
-              </section>
+              <Link href="https://github.com/GautamGunecha">
+                <section className="rounded-full shadow-sm p-2 shadow-blue-300 cursor-pointer">
+                  <AiOutlineGithub
+                    size={25}
+                    className="text-gray-300 transition duration-500 ease-out hover:ease-in"
+                  />
+                </section>
+              </Link>
+
+              <Link href="https://www.linkedin.com/in/gunechagautam">
+                <section className="cursor-pointer  rounded-full shadow-sm p-2 shadow-blue-300">
+                  <AiOutlineLinkedin
+                    size={25}
+                    className="text-sky-600 transition duration-500 ease-out hover:ease-in"
+                  />
+                </section>
+              </Link>
+
+              <Link href="https://twitter.com/GunechaGautam">
+                <section className="rounded-full cursor-pointer shadow-sm p-2 shadow-blue-300 ">
+                  <AiOutlineTwitter
+                    className="text-sky-400 transition duration-500 ease-out hover:ease-in"
+                    size={25}
+                  />
+                </section>
+              </Link>
             </div>
           </div>
         </div>

@@ -90,12 +90,12 @@ const Projects = () => {
                   {content.desc}
                 </p>
                 <section className="flex gap-4">
-                  <Link href={"/"}>
+                  <Link href={content.demo}>
                     <p className="border p-1 md:p-2 w-full text-center cursor-pointer hover:scale-105 ease-in duration-300">
                       Demo
                     </p>
                   </Link>
-                  <Link href={"/"}>
+                  <Link href={content.git}>
                     <p className="cursor-pointer border p-1 md:p-2 w-full text-center hover:scale-105 ease-in duration-300">
                       Github
                     </p>
