@@ -15,10 +15,8 @@ const Hero = () => {
           </h1>
 
           <p className="py-4 max-w-[80%] m-auto tracking-widest font-extralight  text-sm text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
-            libero tempore inventore eaque perferendis repellat accusamus. Rerum
-            id molestiae natus ipsa consequuntur accusamus hic optio ipsum!
-            Nihil ullam dolorem earum!
+            Self-driven, quick starter, passionate programmer with a curious
+            mind who enjoys out building new and exiting projects.
           </p>
         </div>
       </div>

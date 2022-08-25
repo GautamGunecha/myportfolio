@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -12,35 +13,25 @@ const About = () => {
             About
           </h1>
           <p className="py-2 mt-6 text-lg text-justify">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam,
-            sapiente labore, quidem pariatur recusandae itaque voluptatem illum,
-            perferendis possimus eius necessitatibus! Officia quod praesentium
-            maxime dolores modi harum accusamus culpa. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Non, dolorum. Blanditiis quia
-            corporis magnam animi porro praesentium ab commodi quisquam ut
-            obcaecati natus deserunt dolorum, iusto eveniet, aliquam mollitia
-            pariatur.
+            Myself Gautam Gunecha, full stack developer based out of Varanasi,
+            India. I have completed my Bachelor's of engineering in Information
+            Technology from SRM, Chennai. I enjoy working on projects where I
+            can learn new skills as a developer, and a better overall product
+            experience.
           </p>
 
-          <p className="py-2 text-lg text-justify">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam,
-            sapiente labore, quidem pariatur recusandae itaque voluptatem illum,
-            perferendis possimus eius necessitatibus! Officia quod praesentium
-            maxime dolores modi harum accusamus culpa. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Non, dolorum. Blanditiis quia
-            corporis magnam animi porro praesentium ab commodi quisquam ut
-            obcaecati natus deserunt dolorum, iusto eveniet, aliquam mollitia
-            pariatur.
-          </p>
+          <p className="py-2 text-lg text-justify"></p>
 
-          <p className="py-2 underline cursor-pointer">
-            Check out my projects!
-          </p>
+          <Link href="/#projects">
+            <p className="py-2 underline cursor-pointer">
+              Check out my projects!
+            </p>
+          </Link>
         </div>
         <div className="w-full m-auto h-auto shadow-xl shadow-gray-600 rounded-xl items-center justify-center  p-4 hover:scale-105 ease-in duration-500">
           <img
             className="rounded-xl"
-            src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+            src="https://images.unsplash.com/photo-1553390774-b4822481c894?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=744&q=80"
             alt="unsplash"
           />
         </div>
