@@ -4,6 +4,7 @@ import mantraecomm from "../projects/mantraecomm.png";
 import mealmonkey from "../projects/mealmonkey.png";
 import portfolio from "../projects/portfolio.png";
 import livechat from "../projects/livechat.png";
+import momsblisss from "../projects/momsblisss.png";
 
 // import skills image
 import javascript from "../skills/javascript.png";
@@ -116,7 +117,7 @@ export const projectsData = [
     id: 6,
     name: "Moms Blisss",
     category: "client",
-    image: "",
+    image: momsblisss,
     desc: "Help out local home vendor to setup ecommerce website. Check out and order too :) [Under Maintainance]",
     demo: "https://moms-bliss.vercel.app",
     git: "",
